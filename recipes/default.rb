@@ -6,15 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-docker_installation 'default' do
-  repo 'test'
-  action :create
-end
-
-docker_service_manager 'default' do
-  action :start
-end
-
 docker_image 'iidlx/hanlon' do
   tag 'latest'
   action :pull
